@@ -1,4 +1,4 @@
-import CompleteProduct from './completeProduct';
+import CompleteProduct from '../templates/productPage/completeProduct';
 
 import Link from 'next/link';
 
@@ -30,7 +30,6 @@ const NModal = ({ product }: IModal) => {
   const [size, setSize] = useState('3xl');
 
   const handleSizeClick = (newSize: any) => {
-
     setSize(newSize);
     onOpen();
   };

@@ -4,10 +4,8 @@ import { useShoppingCart } from 'use-shopping-cart';
 //typescript
 import { IProduct } from '../../../typescript';
 //function
-import {
-  ConvertProductDataForCart,
-  formatPrice,
-} from '../../../util/functions';
+import { formatPrice } from '../../../util/functions';
+import { ConvertProductDataForCart } from '../../../util/functions/products';
 //components
 import ImageSlider from '../../shared/imageSlider';
 import Counter from './counter';

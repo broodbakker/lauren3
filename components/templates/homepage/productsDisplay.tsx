@@ -12,7 +12,7 @@ import { SimpleGrid } from '@chakra-ui/react';
 import { mockProducts } from '../../../util/mockdata';
 
 export const ProductsDisplay = () => {
-  const [products, setProducts] = useState<IProduct[]>(mockProducts);
+  const [products] = useState<IProduct[]>(mockProducts);
 
   useEffect(() => {
     // fetchProducts().then((products) => setValue(products.products));

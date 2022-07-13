@@ -9,7 +9,7 @@ import {
   PaginationPageGroup,
   PaginationPrevious,
   PaginationSeparator,
-  usePagination
+  usePagination,
 } from '@ajna/pagination';
 import { ChakraProvider, Stack, Text } from '@chakra-ui/react';
 //constants
@@ -72,7 +72,7 @@ interface IPaginationView {
   pagesCount: number;
   currentPage: number;
   isDisabled: boolean;
-  handlePageChange: (nextPage: number) => void;
+  handlePageChange: (page: number) => void;
   pages: number[];
   children: ReactNode;
 }
