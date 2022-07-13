@@ -27,19 +27,18 @@ interface IModal {
 
 const NModal = ({ product }: IModal) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
-  const [size, setSize] = useState('3xl');
+  const [size] = useState('3xl');
 
-  const handleSizeClick = (newSize: any) => {
-    setSize(newSize);
-    onOpen();
-  };
+  // const handleSizeClick = (newSize: any) => {
+  //   setSize(newSize);
+  //   onOpen();
+  // };
 
   const handleGoToCart = (newSize: any) => {
     onClose();
   };
 
-  const [scrollBehavior, setScrollBehavior] =
-    useState<ScrollBehavior>('outside');
+  const [scrollBehavior] = useState<ScrollBehavior>('outside');
 
   return (
     <>
@@ -78,7 +77,6 @@ const NModal = ({ product }: IModal) => {
       >
         <ModalOverlay />t
         <ModalContent>
-          t
           <ModalCloseButton />
           <ModalBody>
             <CompleteProduct product={product} />
