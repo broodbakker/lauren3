@@ -23,7 +23,7 @@
     "no-unused-vars": [
       1,
       {
-        "args": "after-used",
+        "args": "none",
         "argsIgnorePattern": "^_"
       }
     ]
