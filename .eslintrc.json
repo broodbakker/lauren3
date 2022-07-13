@@ -1,7 +1,23 @@
 {
+  "overrides": [
+    {
+      "files": [
+        "**/*.spec.js",
+        "**/*.spec.jsx",
+        "**/*.test.js",
+        "**/*.test.jsx",
+        "**/*.test.ts",
+        "**/*.test.tsx"
+      ],
+      "env": {
+        "jest": true
+      }
+    }
+  ],
   "extends": ["next", "eslint:recommended", "next/core-web-vitals"],
   "globals": {
-    "React": "readonly"
+    "React": "readonly",
+    "JSX": "readonly"
   },
   "rules": {
     "no-unused-vars": [
