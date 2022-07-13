@@ -15,7 +15,7 @@ export const Layout: FunctionComponent<ILayout> = ({ children }) => {
     <>
       <Navbar />
       <Box minH={'80vh'} pt="84px">
-      {children}
+        {children}
       </Box>
       <Footer />
     </>
