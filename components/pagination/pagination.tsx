@@ -106,7 +106,7 @@ const PaginationView = ({
                 borderRadius="0"
                 borderLeftRadius="4"
               >
-                <Text>Previous</Text>
+                <Text>vorige</Text>
               </PaginationPrevious>
               <PaginationPageGroup
                 isInline
@@ -148,7 +148,7 @@ const PaginationView = ({
                 borderRadius="0"
                 borderRightRadius="4"
               >
-                <Text>Next</Text>
+                <Text>volgende</Text>
               </PaginationNext>
             </PaginationContainer>
           </>

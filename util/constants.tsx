@@ -1,6 +1,6 @@
 export const NUMBER_OF_PRODUCTS_PER_PAGE = 6;
 export const PRODUCT_CATEGORIES = ['paarden', 'stallen', 'dekjes'];
-export const NEWSBAR_LINES = ['this is 1', 'and 2', '3', 'and last 4'];
+export const NEWSBAR_LINES = ['dit is advertentie 1', 'dit is advertentie 2', 'dit is advertentie 3', 'dit is advertentie 4'];
 
 export const ROUTES = {
   home: { label: 'home', href: '/' },
@@ -10,7 +10,7 @@ export const ROUTES = {
 };
 
 //routes
-export const LOGO_SITE = './images/logo_lauren.jpeg';
+export const LOGO_SITE = '/logo_lauren.jpeg';
 
 export const HEADER_PHOTO =
   'https://res.cloudinary.com/dta9vptzh/image/upload/v1655716805/lauren/lauren2.jpg';

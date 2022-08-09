@@ -17,7 +17,7 @@ type CartItemProps = {
   image: string;
   formattedValue: string;
   id: string;
-  setItemQuantity: (id: string, quantity: number) => void;
+  setItemQuantity: (id, quantity) => void;
   removeItem: (id: string) => void;
 };
 

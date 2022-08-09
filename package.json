@@ -10,7 +10,7 @@
     "prettier": "prettier --write .",
     "prepare": "husky install",
     "test": "jest --watch --detectOpenHandles ",
-    "analyze":"ANALYZE=true next build"
+    "analyze": "ANALYZE=true next build"
   },
   "dependencies": {
     "@ajna/pagination": "^1.4.19",

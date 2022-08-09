@@ -3,7 +3,6 @@
  */
 
 import { loadEnvConfig } from '@next/env';
-
 import type { NextApiRequest, NextApiResponse } from 'next';
 import {
   createMocks,
@@ -11,6 +10,7 @@ import {
   createResponse,
   RequestMethod,
 } from 'node-mocks-http';
+
 import apiCheckout from '../pages/api/checkout';
 
 type a = {
@@ -18,7 +18,7 @@ type a = {
 };
 type ApiRequest = NextApiRequest & ReturnType<typeof createRequest>;
 type APiResponse = NextApiResponse & ReturnType<typeof createResponse> & a;
-
+//data
 import { mockCheckoutCart } from '../util/mockdata';
 
 function mockReqRes(method: RequestMethod = 'POST') {

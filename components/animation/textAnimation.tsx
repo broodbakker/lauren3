@@ -28,10 +28,10 @@ const animation = keyframes`
 
 function createCSS() {
   let styles = '';
-  for (let i = 0; i < 20; i += 1) {
+  for (let i = 0; i < 25; i += 1) {
     styles += `
        span:nth-child(${i}) {
-        animation-delay: ${i / 20}s;
+        animation-delay: ${i / 25}s;
       }
      `
   }

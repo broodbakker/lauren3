@@ -24,7 +24,20 @@ const product2 = {
   sku: '4',
 };
 
-export const mockProducts = [product1, product2];
+const product3 = {
+  name: 'carrot',
+  description: 'Yummy yellow fruit',
+  id: '1',
+  price: 400,
+  image: [
+    'https://images.unsplash.com/photo-1574226516831-e1dff420e562?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=225&q=80',
+  ],
+  currency: 'EUR',
+  category: 'paarden',
+  sku: '3',
+};
+
+export const mockProducts = [product1, product2, product3];
 
 export const mockCheckoutCart = {
   1: {

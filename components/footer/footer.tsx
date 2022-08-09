@@ -7,13 +7,17 @@ import {
   Stack,
   Text,
   useColorModeValue,
-  VisuallyHidden,
+  VisuallyHidden
 } from '@chakra-ui/react';
 import { default as NextLink } from 'next/link';
 import { ReactNode } from 'react';
 import { FaInstagram, FaTiktok } from 'react-icons/fa';
 //constants
 import { ROUTES } from '../../util/constants';
+//constants
+import { LOGO_SITE } from '../../util/constants';
+
+
 
 const NAV_ITEMS = [ROUTES.home, ROUTES.winkelmand, ROUTES.overMij];
 
@@ -77,8 +81,8 @@ const SiteLogo = () => {
         <Image
           borderRadius="full"
           boxSize="60px"
-          src="./images/logo_lauren.jpeg"
-          alt="Lauren van Hofwegen"
+          src={LOGO_SITE}
+          alt="lauren schleich"
         />
       </a>
     </NextLink>

@@ -69,7 +69,7 @@ const NAV_ITEMS = [
       {
         label: 'pony',
         subLabel: 'Alle sprongen',
-        href: '/w/stallen',
+        href: '/winkel/stallen/1',
         icon: <IoHome />,
       },
     ],

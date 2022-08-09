@@ -32,6 +32,8 @@ export async function getStaticPaths() {
     mockProducts
   );
 
+  console.log(paths, 'paths');
+
   return { paths, fallback: false };
 }
 
