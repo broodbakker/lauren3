@@ -96,7 +96,6 @@ const PaginationView = ({
         >
           <>
             {children}
-
             <PaginationContainer align="center" justify="center" p={4} w="full">
               <PaginationPrevious
                 _hover={{

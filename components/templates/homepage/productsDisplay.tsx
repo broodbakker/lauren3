@@ -5,14 +5,16 @@ import CartProvider from '../../shared/cartProvider';
 import { Box, Heading } from '@chakra-ui/react';
 import { IProduct } from '../../../typescript';
 // import { fetchProducts } from "../../../util/api"
-import { useEffect, useState } from 'react';
-
 import { SimpleGrid } from '@chakra-ui/react';
+import { useEffect, useState } from 'react';
 //mockdata
 import { mockProducts } from '../../../util/mockdata';
+//functions
+import { amountOfProducts } from "../../../util/functions";
+
 
 export const ProductsDisplay = () => {
-  const [products] = useState<IProduct[]>(mockProducts);
+  const [products] = useState<IProduct[]>(amountOfProducts(4,mockProducts));
 
   useEffect(() => {
     // fetchProducts().then((products) => setValue(products.products));

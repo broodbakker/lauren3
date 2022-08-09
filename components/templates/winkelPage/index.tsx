@@ -4,7 +4,7 @@ import { Layout } from '../../layout';
 import Pagination from '../../pagination';
 import Product from '../../product';
 //style
-import { Box, Center } from '@chakra-ui/react';
+import { Box, Center, SimpleGrid } from '@chakra-ui/react';
 import { IProduct } from '../../../typescript';
 import { PRODUCT_CATEGORIES } from '../../../util/constants';
 
@@ -16,6 +16,8 @@ interface IWinkelPage {
 }
 
 const WinkelPage = ({ products, category }: IWinkelPage) => {
+  console.log(products, 'products');
+
   const router = useRouter();
 
   const options = PRODUCT_CATEGORIES.map((categories) => ({
@@ -46,9 +48,11 @@ const WinkelPage = ({ products, category }: IWinkelPage) => {
             category={products[0].category}
             amountOfProducts={products.length}
           >
-            {products.map((product, index) => (
-              <Product key={index} product={product} />
-            ))}
+            <SimpleGrid columns={[1, 1, 2]} spacing={10} mt="10">
+              {products.map((product, index) => (
+                <Product key={index} product={product} />
+              ))}
+            </SimpleGrid>
           </Pagination>
         </Box>
       </Box>
